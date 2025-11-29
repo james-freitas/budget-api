@@ -1,0 +1,15 @@
+# src/main/resources/application.yml
+spring:
+  application:
+    name: budgetapi
+
+firestore:
+    collection: budgets
+
+firebase:
+  # If the JSON is on the classpath (src/main/resources), use just the filename:
+  # credentials-path: service-account.json
+  # Or use an absolute path on the filesystem:
+  # credentials-path: /home/james-freitas/keys/service-account.json
+  credentials-path: service-account.json
+  project-id: your-gcp-project-id
